@@ -35,5 +35,5 @@ When console print this message : `INFO  [Server] Starting the simple server...`
 
 
 
-See tutorials to know how to configure simulation tool....
+See [tutorials]({{ site.baseurl }}/tutorials/) to know how to configure simulation tool....
 

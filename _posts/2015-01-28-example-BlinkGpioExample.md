@@ -84,7 +84,7 @@ You should have something like that....
 
 ## RUN !
 
-Now , we have to start your project in eclipse debugger [(see getting started)]({{ site.baseurl }}/gettingstarted/), wait for the message `INFO  [Server] Starting the simple server...` and Run the model in ptolemy.
+Now , we have to start your project in eclipse debugger [(see install)]({{ site.baseurl }}/Install/), wait for the message `INFO  [Server] Starting the simple server...` and Run the model in ptolemy.
 
 I hope you 'll feel the same exaltation than me seeing this graph.
 

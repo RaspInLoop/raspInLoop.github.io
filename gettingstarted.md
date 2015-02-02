@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Getting Started
-permalink: /gettingstarted/
+title: Install
+permalink: /Install/
 ---
 
 #Install eclipse plugin

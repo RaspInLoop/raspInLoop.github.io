@@ -14,4 +14,4 @@ Thanks to the new FMI (Fonctional Mock-up Interface) standard [FMI 2.0](https://
 
 RaspInLoop provides a FMU implementation that allows java code, using Pi4J, to be in the simulation loop.
 
-Have a look to the [Getting Started](/gettingstarted/) page have more information about  installation and usage.
+Have a look to the [How It Works](/howitworks/), [Tutorials](/tutorial/) pages have more information about installation and usage.

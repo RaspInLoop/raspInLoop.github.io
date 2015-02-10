@@ -6,9 +6,9 @@ permalink: /Install/
 
 #Install eclipse plugin
 
-Currently, the plugin is **only compatible with eclipse Luna (4.4)**
+The plugin is compatible with eclipse Juno and higher (4.2)
 
-update site url : `www.raspinloop.org/data/updates/4.4`
+update site url : `www.raspinloop.org/data/updates/4.2`
 
 ![new update site]({{ site.baseurl }}/images/updatesite.png)
 

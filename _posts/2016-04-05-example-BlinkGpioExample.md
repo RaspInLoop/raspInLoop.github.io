@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BlinkGpioExample
+title: BlinkGpioExample with preconfigured FMU
 date: "2016-04-05 05:51"
 ---
 Some examples are distributed with Pi4J jar.

@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Debugging and testing java application on [Raspebby Pi](http://www.raspberrypi.org/) using [Pi4J libraries](http://pi4j.com/index.html) can be very difficult. Especially if you do not have your hardware yet, or if your process take several hours to change.
+Debugging and testing java application on [Raspebby Pi](http://www.raspberrypi.org/) using [Pi4J libraries](http://pi4j.com/index.html) can be very difficult. Especially if you do not have your hardware yet, or if your process takes several hours to change.
 
 Mocking the Pi4J implementation may be usefull for small tests, but you may have to simulate a complex process. Such a process are too difficult to modelise with java code.
 

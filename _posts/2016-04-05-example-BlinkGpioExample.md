@@ -1,7 +1,7 @@
 ---
 layout: post
-title: BlinkGpioExample
-date: "2016-04-05 05:51"
+title: BlinkGpioExample with preconfigured FMU
+date: "2016-04-05"
 ---
 Some examples are distributed with Pi4J jar.
 One of the simplest is BlinkGpioExample : led1 blinks every 1/2 seconds uring 15 seconds  and led2 blinks every seconds but speed up the rate when button is pressed.
@@ -10,10 +10,10 @@ One of the simplest is BlinkGpioExample : led1 blinks every 1/2 seconds uring 15
 
 After installing ([see getting started]({{../gettingstarted.md}})) and creating your project in eclipse, you have to set up  your debug configuration:
 
-![Debug config](../images/2016/DebugConfig.png)
+![Debug config]({{ site.baseurl }}/images/2016/DebugConfig.png)
 
 Then Right click on RIL-Simulate and choose new configuration
-![New Debug configuration](../images/2016/DebugConfig2.png)
+![New Debug configuration]({{ site.baseurl }}/images/2016/DebugConfig2.png)
 
 ### Board configuration
 You have now to choose which hardware you want to use.
@@ -21,16 +21,16 @@ Even with a single Raspberry Pi board, there is a lot of different configuration
 In this example, GPIO1 and GPIO3 are used as outputs and GPIO2 is an input.
 
 So, click on "Configure Board", in the "Manage Hardware list" click on "Add..."
-![manage hardware](../images/2016/ManageHardwareLiust.png)
+![manage hardware]({{ site.baseurl }}/images/2016/ManageHardwareLiust.png)
 
 Name your new hardware, check GPIO 1 and 3 as outputs, 2 as input and leave the other unused and save it.
 
-![ Configure board](../images/2016/ConfigureBoard.png)
+![ Configure board]({{ site.baseurl }}/images/2016/ConfigureBoard.png)
 
 ### export fmu
 
 Choosing "Functional Mockup Unit" as Simulation Mode allows you to get the FMU file. Cliuck on the button and choose the location where the file will be saved.
-![Debug Config FMU](../images/2016/DebugConfigFMU.png)
+![Debug Config FMU]({{ site.baseurl }}/images/2016/DebugConfigFMU.png)
 
 I have choosen : `C:\Users\Fred\workspace\RIL-Tuto\RaspberryPi GPIO Simulator.fmu`
 
@@ -42,11 +42,11 @@ Download and install Ptolemy II
 
 Then Download the sample Ptolemy Project : [www.raspinloop.org/data/Ptolemy_blinkGpioExample.xml]({{ site.baseurl }}/data/Ptolemy_blinkGpioExample.xml) and open it in Ptolemy:
 
-![ptolemy start](../images/ptolemystart.png)
+![ptolemy start]({{ site.baseurl }}/images/ptolemystart.png)
 
 `file -> Open File` and select the previously downloaded `Ptolemy_blinkGpioExample.xml`
 
-![ptolemy project opened](../images/ptolemyprojectopened.png)
+![ptolemy project opened]({{ site.baseurl }}/images/ptolemyprojectopened.png)
 
 The project consists of 4 different parts:
 
@@ -85,10 +85,10 @@ This is the *Main* block. This block is the FMU (functional mockup unit) of Rasp
 
 To configure it, we have to import FMU file it in Ptolemy:
 
-![ptolemy import fmu](../images/2016/Instantiate Functional Mock-up Unit (FMU).png)
+![ptolemy import fmu]({{ site.baseurl }}/images/2016/Instantiate Functional Mock-up Unit (FMU).png)
 
 *DO NOT CHECK : Import for model exchange*
-![ptolemy import path](../images/ptolemyimportpath.png)
+![ptolemy import path]({{ site.baseurl }}/images/ptolemyimportpath.png)
 
 We may 'wire' GPIO2_i to the wire outgoing from Squarewave generator.
 
@@ -102,7 +102,7 @@ Now you may 'wire' your output to the converters
 
 
 You should have something like that....
-![ptolemy wired](../images/ptolemywired.png)
+![ptolemy wired]({{ site.baseurl }}/images/ptolemywired.png)
 
 
 ## RUN !
@@ -111,7 +111,7 @@ Now , we have to start your project in eclipse debugger [(see install)]({{ site.
 
 I hope you 'll feel the same exaltation as me seeing this graph.
 
-![ptolemy grap](../images/ptolemyresults.png)
+![ptolemy grap]({{ site.baseurl }}/images/ptolemyresults.png)
 
 Pens:
 

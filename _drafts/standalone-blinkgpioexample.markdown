@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Standalone BlinkGpioExample"
-date: "2016-03-31 05:49"
+date: "2016-04-05 05:51"
 ---
 Some examples are distributed with Pi4J jar.
 One of the simplest is BlinkGpioExample : led1 blinks every 1/2 seconds during 15 seconds  and led2 blinks every seconds but speed up the rate when button is pressed.

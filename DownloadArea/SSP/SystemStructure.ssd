@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SystemStructureDescription xmlns="http://www.pmsf.net/xsd/SystemStructureDescriptionDraft" version="Draft20170606" name="Blinking">
+    <System name="Blinking">
+        <Elements>
+            <Component name="Switch" source="resources/booleanPulse.fmu" type="application/x-fmu-sharedlibrary">
+                <Connectors>
+                    <Connector name="y" kind="output"/>
+                </Connectors>
+            </Component>
+            <Component name="Raspberry" source="resources/RaspberryPi GPIO Simulator.fmu" type="application/x-fmu-sharedlibrary">
+                <Connectors>
+                    <Connector name="GPIO 2" kind="input"/>
+                    <Connector name="GPIO 1" kind="output"/>
+					<Connector name="GPIO 3" kind="output"/>
+                </Connectors>
+            </Component>
+        </Elements>
+        <Connections>
+            <Connection startElement="Switch" startConnector="y" endElement="Raspberry" endConnector="GPIO 2"/>
+        </Connections>
+    </System>
+</SystemStructureDescription>

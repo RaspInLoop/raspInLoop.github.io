@@ -1,0 +1,31 @@
+{
+  "java_type": "org.raspinloop.pi4j.io.gpio.RaspiGpioSimulatorProperties",
+  "boardHardwareDelegate": {
+    "java_type": "org.raspinloop.config.BoardHardwareDelegate",
+    "guid": "{5571c639-6438-4eee-839e-ff8442e3bbbc}",
+    "outputPins": [
+      {
+        "provider": "RaspberryPi GPIO Provider",
+        "address": 1,
+        "name": "GPIO 1"
+      },
+      {
+        "provider": "RaspberryPi GPIO Provider",
+        "address": 3,
+        "name": "GPIO 3"
+      }
+    ],
+    "inputPins": [
+      {
+        "provider": "RaspberryPi GPIO Provider",
+        "address": 2,
+        "name": "GPIO 2"
+      }
+    ],
+    "extentionComponents": [],
+    "uartComponents": [],
+    "spiComponents": [],
+    "i2cComponents": []
+  },
+  "componentName": "RaspberryPi GPIO Simulator"
+}

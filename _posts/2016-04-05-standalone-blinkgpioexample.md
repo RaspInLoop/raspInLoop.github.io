@@ -21,7 +21,7 @@ The standalone simulation mode use an internal and configurable time sequencer. 
 
 ## Debug Configuration
 
-After installing ([see getting started]({{{{ site.baseurl }}/packages/eclipse.md}})) and creating your project in eclipse, you have to set up  your debug configuration:
+After installing ([see getting started]({{ site.baseurl }}/packages/eclipse.md)) and creating your project in eclipse, you have to set up  your debug configuration:
 
 ![Debug config]({{ site.baseurl }}/img/tutorials/2016/DebugConfig.png)
 

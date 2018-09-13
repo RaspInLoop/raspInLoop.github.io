@@ -49,7 +49,7 @@ in your *C:\Users\Fred\AppData\Roaming\Scilab\scilab-5.5.2\.scilab* file.
 ## Finally
 
 You may then, drop the FMInterface block into your diagram.
-Double click on the block to select the previously saved FMU ([see tuto]({{2016-04-05-example-BlinkGpioExample.md}}))
+Double click on the block to select the previously saved FMU ([see tuto]({{ site.baseurl }}/_post/2016-04-05-example-BlinkGpioExample.md))
 ![Double click]({{ site.baseurl }}/img/tutorials/Xcos-selectFmu.png)
 
 Once selected the Block will reflect input/output defined in FMU

@@ -1,0 +1,33 @@
+ <!-- tutorials Modals -->
+ {% for package in site.packages %}
+    <div class="package-modal modal fade" id="packageModal{{ package.id }}" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>{{ package.title }}</h2>
+                            <hr class="star-primary">
+                            <p>{{ package.description }}</p>
+                            <ul class="list-inline item-details">
+                                <li>Package:
+                                    <strong>{{ package.type }}</strong>
+                                </li>
+                            </ul>
+                              <div class="post-content">
+                                {{ package.content }}
+                              </div>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}

@@ -1,7 +1,16 @@
 ---
-layout: "post"
 title: "Standalone BlinkGpioExample"
-date: "2016-04-05"
+subtitle: Using plugin to simulate BlinkingGpioExample
+layout: default
+modal-id: 3
+date: 2016-04-05
+img: ptolemywired.png
+thumbnail: DebugConfigStandalone-thumbnail.png
+alt: Ptolemy II screnshot
+project-date: April 2016
+client: Eclipse Plugin
+category: internal Simulation
+description:
 ---
 Some examples are distributed with Pi4J jar.
 One of the simplest is BlinkGpioExample : led1 blinks every 1/2 seconds during 15 seconds  and led2 blinks every seconds but speed up the rate when button is pressed.
@@ -12,12 +21,12 @@ The standalone simulation mode use an internal and configurable time sequencer. 
 
 ## Debug Configuration
 
-After installing ([see getting started]({{{{ site.baseurl }}/gettingstarted.md}})) and creating your project in eclipse, you have to set up  your debug configuration:
+After installing ([see getting started]({{{{ site.baseurl }}/packages/eclipse.md}})) and creating your project in eclipse, you have to set up  your debug configuration:
 
-![Debug config]({{ site.baseurl }}/images/2016/DebugConfig.png)
+![Debug config]({{ site.baseurl }}/img/tutorials/2016/DebugConfig.png)
 
 Then Right click on RIL-Simulate and choose new configuration
-![New Debug configuration]({{ site.baseurl }}/images/2016/DebugConfig2.png)
+![New Debug configuration]({{ site.baseurl }}/img/tutorials/2016/DebugConfig2.png)
 
 ### Board configuration
 You have now to choose which hardware you want to use.
@@ -25,17 +34,17 @@ Even with a single Raspberry Pi board, there is a lot of different configuration
 In this example, GPIO1 and GPIO3 are used as outputs and GPIO2 is an input.
 
 So, click on "Configure Board", in the "Manage Hardware list" click on "Add..."
-![manage hardware]({{ site.baseurl }}/images/2016/ManageHardwareLiust.png)
+![manage hardware]({{ site.baseurl }}/img/tutorials/2016/ManageHardwareLiust.png)
 
 Name your new hardware, check GPIO 1 and 3 as outputs, 2 as input and leave the other unused and save it.
-![ Configure board]({{ site.baseurl }}/images/2016/ConfigureBoard.png)
+![ Configure board]({{ site.baseurl }}/img/tutorials/2016/ConfigureBoard.png)
 
 
 
 ### Standalone settings
 
 Choose stand alone as Simulation Mode and choose
-![Standalone]({{ site.baseurl }}/images/2016/DebugConfigStandalone.png)
+![Standalone]({{ site.baseurl }}/img/tutorials/2016/DebugConfigStandalone.png)
 
 Then,  "Debug" !!
 

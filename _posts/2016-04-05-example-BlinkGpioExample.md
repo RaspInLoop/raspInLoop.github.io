@@ -13,7 +13,7 @@ category: External Simulation
 description: Second tuto with BlinkGpioExample but we are using an FMU configured only for this project.
 ---
 Some examples are distributed with Pi4J jar.
-One of the simplest is BlinkGpioExample : led1 blinks every 1/2 seconds uring 15 seconds  and led2 blinks every seconds but speed up the rate when button is pressed.
+One of the simplest is BlinkGpioExample : led1 blinks every 1/2 seconds during 15 seconds and led2 blinks every second but speed up the rate when button is pressed.
 
 ## Eclipse Debug Configuration
 
@@ -25,8 +25,8 @@ Then Right click on RIL-Simulate and choose new configuration
 ![New Debug configuration]({{ site.baseurl }}/img/tutorials/2016/DebugConfig2.png)
 
 ### Board configuration
-You have now to choose which hardware you want to use.
-Even with a single Raspberry Pi board, there is a lot of different configuration.
+You now need to choose which hardware you want to use.
+Even with a single Raspberry Pi board, there is a lot of different configurations.
 In this example, GPIO1 and GPIO3 are used as outputs and GPIO2 is an input.
 
 So, click on "Configure Board", in the "Manage Hardware list" click on "Add..."
@@ -38,10 +38,10 @@ Name your new hardware, check GPIO 1 and 3 as outputs, 2 as input and leave the 
 
 ### export fmu
 
-Choosing "Functional Mockup Unit" as Simulation Mode allows you to get the FMU file. Cliuck on the button and choose the location where the file will be saved.
+Choosing "Functional Mockup Unit" as Simulation Mode allows you to get the FMU file. Click on the button and choose the location where the file will be saved.
 ![Debug Config FMU]({{ site.baseurl }}/img/tutorials/2016/DebugConfigFMU.png)
 
-I have choosen : `C:\Users\Fred\workspace\RIL-Tuto\RaspberryPi GPIO Simulator.fmu`
+I have chosen : `C:\Users\Fred\workspace\RIL-Tuto\RaspberryPi GPIO Simulator.fmu`
 
 
 ## Ptolemy Project
@@ -68,7 +68,7 @@ The project consists of 4 different parts:
 Ptolemy II is based on a class of models called actor-oriented models , or more simply, actor models.
 Actors are components that execute concurrently and share data with each other by sending messages via ports.
 
-The director is responsible to coordonate dataflow through port of each block. Continuous director is able to computes in each iteration, a fixed point for all signal values. In each iteration, time is advanced by an amount determined by the solver. (see [Ptolemy getting started](http://ptolemy.eecs.berkeley.edu/books/Systems/chapters/IGettingStarting.pdf))
+The director is responsible to coordinate dataflow through port of each block. Continuous director is able to compute in each iteration, a fixed point for all signal values. In each iteration, time is advanced by an amount determined by the solver. (see [Ptolemy getting started](http://ptolemy.eecs.berkeley.edu/books/Systems/chapters/IGettingStarting.pdf))
 
 Our configuration for the Step size is :
 

@@ -13,11 +13,11 @@ category: internal Simulation
 description:
 ---
 Some examples are distributed with Pi4J jar.
-One of the simplest is BlinkGpioExample : led1 blinks every 1/2 seconds during 15 seconds  and led2 blinks every seconds but speed up the rate when button is pressed.
+One of the simplest is BlinkGpioExample : led1 blinks every 1/2 seconds during 15 seconds  and led2 blinks every second but speed up the rate when button is pressed.
 
 ## Standalone Simulation Mode
 Unlike the first tuto, where we used Ptolemy II ([The Ptolemy Project](http://ptolemy.eecs.berkeley.edu/ptolemyII/index.htm)) as a Computed Simulation Environment to drive our debug session, we will choose the standalone simulation mode.
-The standalone simulation mode use an internal and configurable time sequencer. You just have to choose the simulation duration (End Time), the simulation precision(Time Increment) and whether the time must be speed up or slow down.(Time Ratio)
+The standalone simulation mode uses an internal and configurable time sequencer. You just have to choose the simulation duration (End Time), the simulation precision(Time Increment) and whether the time must be speed up or slow down.(Time Ratio)
 
 ## Debug Configuration
 
@@ -29,8 +29,8 @@ Then Right click on RIL-Simulate and choose new configuration
 ![New Debug configuration]({{ site.baseurl }}/img/tutorials/2016/DebugConfig2.png)
 
 ### Board configuration
-You have now to choose which hardware you want to use.
-Even with a single Raspberry Pi board, there is a lot of different configuration.
+You now need to choose which hardware you want to use.
+Even with a single Raspberry Pi board, there is a lot of different configurations.
 In this example, GPIO1 and GPIO3 are used as outputs and GPIO2 is an input.
 
 So, click on "Configure Board", in the "Manage Hardware list" click on "Add..."

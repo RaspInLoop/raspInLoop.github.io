@@ -10,7 +10,7 @@ alt: Ptolemy II screnshot
 project-date: January 2015
 client: Eclipse Plugin
 category: External Simulation
-description: One of the simplest example distributed with Pi4j is BlinkGpioExample. Led1 blinks every 1/2 seconds uring 15 seconds  and led2 blinks every seconds but speed up the rate when button is pressed.
+description: One of the simplest example distributed with Pi4j is BlinkGpioExample. Led1 blinks every 1/2 seconds during 15 seconds  and led2 blinks every second but speed up the rate when button is pressed.
 ---
 
 
@@ -61,7 +61,7 @@ TriggeredSinewave is configured like this:
 
 ### The FMU binding
 
-This is the *Main* block. This block is the FMU (functional mockup unit) of Raspberry Pi. It will behave like all other blocks, with their inputs and output. Expect that , this block will communicate with Eclipse to allow the java application to read inputs ans set outputs.
+This is the *Main* block. This block is the FMU (functional mockup unit) of Raspberry Pi. It will behave like all other blocks, with their inputs and output. Expect that , this block will communicate with Eclipse to allow the java application to read inputs and set outputs.
 
 To configure it, we have to download the Raspberry_b.fmu (currently only the B model)  [www.raspinloop.org/data/fmu/raspberry_b.fmu](www.raspinloop.org/data/fmu/raspberry_b.fmu) then import it in Ptolemy:
 

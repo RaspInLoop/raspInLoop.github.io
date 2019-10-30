@@ -16,7 +16,7 @@ description:
 ## Xcos
 Xcos (from [Scilab](http://www.scilab.org/)) is a graphical dynamical system modeler and simulator. Users can create block diagrams to model and simulate the dynamics of hybrid dynamical systems both continuous and discrete time.
 
-RaspInLoop uses the Fonctional Mockup Interface (FMI) to communicate with such a simulator and the eclipse's debugger. Xcos doesn't provide module pre-installed to use FMI. We have to install it by ourselves.
+RaspInLoop uses the Functional Mockup Interface (FMI) to communicate with such a simulator and the eclipse's debugger. Xcos doesn't provide module pre-installed to use FMI. We have to install it by ourselves.
 
 The module is called "Xcos FMU wrapper" and is available on the scilab forge. Unfortunately, support for FMI 2.0 (which is required for RaspInloop) is still on development. So installation won't be so easy.
 
@@ -37,7 +37,7 @@ You can now start xcos
 You should have a new entry in you "palette browser"
 ![palette browser]({{ site.baseurl }}/img/tutorials/Xcos-palettebrowser.png)
 
-  Note: to avoid to load module manualy at every startup, you could add this:
+  Note: to avoid to load module manually at every startup, you could add this:
 
 ```
 cd C:\Users\Fred\Documents\RIL\fmu-wrapper-master
